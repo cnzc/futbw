@@ -1,0 +1,123 @@
+body
+{
+  font-family: "Arial";
+	background-color: rgba(255, 166, 0, 0.37);
+}
+h1, h2, h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+h4, h5, h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+a {
+  color: green;
+
+}
+
+.left1 {
+width: 50%;
+float: left;
+	text-align: center;
+}
+
+.right1 {
+width: 50%;
+float: left;
+	text-align: center;
+}
+.container {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-sh {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+	max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.btn {
+  font-family: thefont;
+  display: inline-block;
+  font-weight: 400px;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0px 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  transition: 0.1s all;
+}
+.btn:active {
+  transform: scale(0.95);
+
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn-light {
+  color: black;
+  background-color: orange;
+  border-color: orange;
+}
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #212529;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn-light:hover {
+  color: black;
+  background-color: pink;
+  border-color: pink;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+hr {
+  border: 0.5px solid grey;	
+  overflow: visible;
+}
