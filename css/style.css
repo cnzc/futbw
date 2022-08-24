@@ -1,14 +1,14 @@
 body
 {
-  font-family: "Arial";
+  font-family: 'Poppins';
 	background-color: rgba(255, 166, 0, 0.37);
 }
 h1, h2, h3 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
 }
 h4, h5, h6 {
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }
 p {
@@ -16,8 +16,9 @@ p {
   margin-bottom: 0rem;
 }
 a {
-  color: green;
-
+  color: brown;
+  margin-top: 0;
+  margin-bottom: 0rem;
 }
 
 .left1 {
@@ -51,6 +52,7 @@ float: left;
   text-align: center !important;
 }
 .btn {
+  font-family: 'Poppins';
   font-family: thefont;
   display: inline-block;
   font-weight: 400px;
@@ -88,6 +90,7 @@ float: left;
   border-color: #343a40;
 }
 .btn-light {
+  font-family: 'Poppins';
   color: black;
   background-color: orange;
   border-color: orange;

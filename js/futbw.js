@@ -205,6 +205,7 @@ function round1(chosen) {
 }
 
 function round2() {
+	document.getElementById("logarea").value+="\nYou PASSED.";
 	while (choose > 0) {
 		choose = 0;
 		for (i = 1; i <= cardtop2; i++) {
@@ -233,7 +234,8 @@ function round2() {
 			}
 
 		if (choose == 0) {
-			document.getElementById("logarea").value+="\nPC PASSED.";
+			document.getElementById("logarea").value+="\nPC PASSED.\nIt's your round now.\nYou recovered 2MP and reset 3AP.";
+			document.getElementById("logarea").focus();
 			return 0;
 		}
 		if (card2[choose] == 1)
@@ -246,16 +248,16 @@ function round2() {
 			treat(2, choose);
 		else if (card2[choose] == 5)
 			flyingball(2, choose);
-			document.getElementById("logarea").focus();
 			if (hp1 <= 0) {
-			document.getElementById("logarea").value+="\n\nPC Win! You Lose.";
+			document.getElementById("logarea").value+="\nPC Win! You Lose.";
+			document.getElementById("logarea").focus();
 			return 0;
 		}
 	}
 	return 0;
 }
 
-	document.getElementById("logarea").value+="HTTPS://FUTBW.COM";
+	document.getElementById("logarea").value+="Welcome to https://FUTBW.com\n";
 	mp1 = 4, hp1 = 5, ap1 = 3, thp1 = 0, cardtop1 = 0;
 	mp2 = 4, hp2 = 5, ap2 = 3, thp2 = 0, cardtop2 = 0;
 	//
@@ -275,6 +277,7 @@ function zok() {
 				card1[i] =0;
 			}
 			cardtop1=8;
+//			document.getElementById("logarea").value+="\nWARNING:There are too many cards. The extra cards will be discarded";
 		}
 		if(cardtop2>=9)
 		{
@@ -293,41 +296,72 @@ function zok() {
 	
 else
 {
-	
-	document.getElementById("logarea").value+="\n\n\nDEMO OVER\n";
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();
 }
-document.getElementById("logarea").focus();
+
 }
 
 function cs1()
 {
+if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(1);
 }
 function cs2()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(2);
 }
 function cs3()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(3);
 }
 function cs4()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(4);
 }
 function cs5()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(5);
 }
 function cs6()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(6);
 }
 function cs7()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(7);
 }
 function cs8()
 {
+	if (hp1 <= 0 || hp2 <= 0)
+{
+document.getElementById("logarea").value+="\nDEMO OVER!";document.getElementById("logarea").focus();return;
+}
 	round1(8);
 }
