@@ -7,7 +7,7 @@
         {
             "src": "/cn",
             "status": 308,
-            "dest": "/cn/"
+            "dest": "https://futbw.com/cn/"
         },
         {
             "src": "/(.*)",
