@@ -5,6 +5,11 @@
             "handle": "filesystem"
         },
         {
+            "src": "/cn",
+            "status": 308,
+            "dest": "/cn/"
+        },
+        {
             "src": "/(.*)",
             "status": 308,
             "dest": "/"
