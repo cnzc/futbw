@@ -1,14 +1,4 @@
 {
-    "version": 2,
     "trailingSlash": true,
-    "routes": [
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "status": 308,
-            "dest": "/"
-        }
-    ]
+    "redirects": [{ "source": "/(.*)", "destination": "/" }]
 }
