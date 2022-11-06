@@ -1,13 +1,9 @@
 {
     "version": 2,
+    "trailingSlash": true,
     "routes": [
         {
             "handle": "filesystem"
-        },
-        {
-            "src": "/cn",
-            "status": 308,
-            "dest": "https://futbw.com/cn/"
         },
         {
             "src": "/(.*)",
