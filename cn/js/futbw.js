@@ -384,7 +384,7 @@ function round2() {
 
 	document.getElementById("cardlake").innerHTML="欢迎来到 https://FUTBW.com\n";
 	mp1 = 4, hp1 = 5, ap1 = 3, thp1 = 0, cardtop1 = 0;
-	mp2 = 4, hp2 = 5, ap2 = 3, thp2 = 0, cardtop2 = 0;
+	mp2 = 4, hp2 = 8, ap2 = 3, thp2 = 0, cardtop2 = 0;
 	//
 	givecard(1, 4);
 	givecard(2, 4);
