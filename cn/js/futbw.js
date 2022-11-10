@@ -38,7 +38,7 @@ function broadcast(w,p,c) {//广播信息(信息 1.出牌2.出牌失败3.游戏�
 			}
 			else if(c==4)
 			{
-				ylc.innerHTML="治疗 HP+2";
+				ylc.innerHTML="治疗 HP+1";
 				yrc.innerHTML+=" 治疗";
 			}
 			else if(c==5)
@@ -66,7 +66,7 @@ function broadcast(w,p,c) {//广播信息(信息 1.出牌2.出牌失败3.游戏�
 			}
 			else if(c==4)
 			{
-				plc.innerHTML="治疗 HP+2";
+				plc.innerHTML="治疗 HP+1";
 				prc.innerHTML+=" 治疗";
 			}
 			else if(c==5)
