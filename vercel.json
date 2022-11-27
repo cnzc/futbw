@@ -5,6 +5,6 @@
         {
             "handle": "filesystem"
         },
-        { "src": "/(.*)", "status": 308, "headers": { "Location": "/zh-cn" } }
+        { "src": "/(.*)", "status": 308, "headers": { "Location": "/cn" } }
     ]
 }
