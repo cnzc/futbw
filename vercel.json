@@ -4,9 +4,8 @@
     "routes": [
                 {
             "src": "/zh-cn",
-            "dest": "/cn/"
+            "dest": "https://futbw.com/cn/"
         },
         { "src": "/(.*)", "status": 308, "headers": { "Location": "/zh-cn" } }
-
     ]
 }
