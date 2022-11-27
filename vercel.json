@@ -2,13 +2,11 @@
 {
     "version": 2,
     "routes": [
-        {
-            "handle": "filesystem"
-        },
-        { "src": "/", "status": 308, "headers": { "Location": "/zh-cn" } },
-        {
+                {
             "src": "/zh-cn",
             "dest": "/cn"
-        }
+        },
+        { "src": "/(.*)", "status": 308, "headers": { "Location": "/zh-cn" } }
+
     ]
 }
