@@ -1,6 +1,6 @@
 body
 {
-  font-family: 'Poppins';
+  font-family: 'Oxanium';
 	background-color: rgba(255, 166, 0, 0.37);
 }
 h1, h2, h3 {
@@ -33,6 +33,7 @@ float: left;
 	text-align: center;
 }
 .container {
+  font-family: 'Oxanium';
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -40,6 +41,7 @@ float: left;
   margin-left: auto;
 }
 .container-sh {
+  font-family: 'Oxanium';
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -121,6 +123,6 @@ float: left;
   border-color: #1e7e34;
 }
 hr {
-  border: 0.5px solid grey;	
+  border: 0.5px solid yellow;	
   overflow: visible;
 }

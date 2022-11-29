@@ -4,81 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUTBW - Awesome card game!</title>
-    <link rel="shortcut icon" href="image/futbwcomlogo.png">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+    <title>FUTBW.com 极好玩的卡牌游戏!</title>
+    <link rel="shortcut icon" href="https://jsd.onmicrosoft.cn/gh/cnzc/futbw@master/image/futbwcomlogo.png">
+    <link href="https://jsd.onmicrosoft.cn/gh/cnzc/futbw@master/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container-sh">
 		<div class="text-center">
 			
-<h1 style="font-size: 48px;"><b>FUTBW.com</b></h1>
-<h3>FUTBW is an awesome card game.</h3>
-<h3>FUTBW.com is a FUTBW simulator.</h3>
+<h1 style="font-size: 48px;"><b>FUTBW.COM</b></h1>
+<h3>FUTBW 是一款极好玩的卡牌游戏</h3>
+<h3>FUTBW.com 提供在线 FUTBW 网页版</h3>
 
     <div class="container-sh" style="border: 1px solid orange;max-width: 350px;">
     
-    <span>PC's HP:</span><span id="pcshp">5</span>
+    <span>电脑 HP:</span><span id="pcshp">5</span>
     <span> MP:</span><span id="pcsmp">4</span>
     <span> AP:</span><span id="pcsap">3</span>
 <br>
-<textarea rows="10" style="resize: none; max-width: 350px; min-width: 280px; font-family: 'Poppins';" id="logarea">
-Game log area
-</textarea>
-    
-<br>
-    <span>Your HP:</span><span id="yourhp">5</span>
+<hr>
+<span>上张卡牌: </span><span id="pclatestcard"></span><br>
+<span>本回合出牌:</span><span id="pcroundcard"></span>
+<hr>
+<span id="cardlake">[卡池 还剩∞张]</span>
+<hr>
+<span>上张卡牌: </span><span id="youlatestcard"></span><br>
+<span>本回合出牌:</span><span id="youroundcard"></span>
+<hr>
+
+    <span>玩家 HP:</span><span id="yourhp">5</span>
     <span> MP:</span><span id="yourmp">4</span>
     <span> AP:</span><span id="yourap">3</span>
 </div>
     
     <center>
     <table border="0" style="border: 1px solid orange;padding: 1px 1px;border-collapse: collapse;">
-        <tr>
-            <td><span>CardSlot1:</span></td>
-            <td><span id="cs1">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs1()">use</span></td>
+        <tr style="display:table;">
+            <td><span>卡槽1:</span></td>
+            <td><span id="cs1">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs1()"  id="tempslot1">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot2:</span></td>
-            <td><span id="cs2">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs2()">use</span></td>
+        <tr style="display:table;">
+            <td><span>卡槽2:</span></td>
+            <td><span id="cs2">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs2()"  id="tempslot2">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot3:</span></td>
-            <td><span id="cs3">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs3()">use</span></td>
+        <tr style="display:table;">
+            <td><span>卡槽3:</span></td>
+            <td><span id="cs3">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs3()"  id="tempslot3">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot4:</span></td>
-            <td><span id="cs4">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs4()">use</span></td>
+        <tr style="display:table;">
+            <td><span>卡槽4:</span></td>
+            <td><span id="cs4">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs4()"  id="tempslot4">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot5:</span></td>
-            <td><span id="cs5">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs5()">use</span></td>
+        <tr id="tempslot5" style="display:table;">
+            <td><span>卡槽5:</span></td>
+            <td><span id="cs5">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs5()">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot6:</span></td>
-            <td><span id="cs6">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs6()">use</span></td>
+        <tr id="tempslot6" style="display:table;">
+            <td><span>卡槽6:</span></td>
+            <td><span id="cs6">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs6()">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot7:</span></td>
-            <td><span id="cs7">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs7()">use</span></td>
+        <tr id="tempslot7" style="display:table;">
+            <td><span>卡槽7:</span></td>
+            <td><span id="cs7">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs7()">出牌</span></td>
         </tr>
-        <tr>
-            <td><span>CardSlot8:</span></td>
-            <td><span id="cs8">Empty</span></td>
-            <td><span class="btn btn-light"  onclick="cs8()">use</span></td>
+        <tr id="tempslot8" style="display:table;">
+            <td><span>卡槽8:</span></td>
+            <td><span id="cs8">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs8()">出牌</span></td>
         </tr>
     </table>
 </center>
-    	<span class="btn btn-light" style="width:10%;" id="ok" onclick="zok()">Pass</span>
-			<br><br><span class="btn btn-light" style="width:20%;" onclick="javascript:location.reload();">Restart</span><br>
+<!--<span class="btn btn-dark" style="width:10%;" id="pass" onclick="zpass()">过</span> -->
+    	<span class="btn btn-light" style="width:10%;" id="ok" onclick="zok()">结束回合</span>
+			<br><br><span class="btn btn-light" style="width:20%;" onclick="javascript:location.reload();">重新开始</span><br><br>
             <p>This is the online web DEMO for FUTBW.<br>
                 Learn if you will like the game.<br><br>
 <p>FUTBW IS COMING SOON<br>
@@ -86,14 +92,18 @@ Game log area
     But a lot of people love this game.<br>
     Who knows. You may love it too.
 </p><br>
-			
-<p>English <a href="https://futbw.com">https://futbw.com</a></p>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1294889328&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31563815&auto=0&height=66"></iframe>
+
+<p>zh-cn <a href="https://futbw.com">https://futbw.com</a></p>
 <br>
 		<h4>Copyright © <strong>FUTBW.com</strong> . All rights reserved .</h4>
 		<p><a href="https://github.com/cnzc/futbw">View source code on GitHub</a></p>
   
+        
 	</div>
 </div>
-<script src="js/futbw.js"></script>
+<script src="https://jsd.onmicrosoft.cn/gh/cnzc/futbw@master/js/futbw.js"></script>
 </body>
 </html>
