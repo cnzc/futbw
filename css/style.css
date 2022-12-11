@@ -34,7 +34,7 @@ body {
  
             background-repeat: no-repeat;
             /* 调用动画 */
-            animation: 20s move linear infinite;
+            animation: 10s move linear infinite;
  
         }
 /*
