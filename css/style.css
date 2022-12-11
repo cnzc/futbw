@@ -37,6 +37,7 @@ body {
             animation: 20s move linear infinite;
  
         }
+/*
         body::after {
             content: '';
             display: block;
@@ -47,7 +48,7 @@ body {
             left: 0;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-        }
+        }*/
  
         @keyframes move {
  
