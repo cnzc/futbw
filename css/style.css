@@ -152,7 +152,7 @@ float: left;
 	text-align: center;
 }
 .container {
-  font-family: 'Oxanium';
+  font-family: 'Ubuntu';
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -160,7 +160,7 @@ float: left;
   margin-left: auto;
 }
 .container-sh {
-  font-family: 'Oxanium';
+  font-family: 'Ubuntu';
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -173,8 +173,8 @@ float: left;
   text-align: center !important;
 }
 .btn {
-  font-family: 'Poppins';
-  font-family: thefont;
+  font-family: 'Ubuntu';
+ 
   display: inline-block;
   font-weight: 400px;
   color: #212529;
@@ -211,7 +211,7 @@ float: left;
   border-color: #343a40;
 }
 .btn-light {
-  font-family: 'Poppins';
+  font-family: 'Ubuntu';
   color: black;
   background-color: orange;
   border-color: orange;
