@@ -21,6 +21,8 @@ function broadcast(w,p,c) {//广播信息(信息 1.出牌2.出牌失败3.游戏�
 	{
 		yrc.innerHTML="";
 		prc.innerHTML="";
+		ylc.innerHTML="";
+		plc.innerHTML="";
 	}
 	else if(w==1)
 	{
