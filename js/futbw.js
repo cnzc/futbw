@@ -17,7 +17,12 @@ var plc=document.getElementById("pclatestcard");
 var prc=document.getElementById("pcroundcard");
 var cl=document.getElementById("cardlake");
 function broadcast(w,p,c) {//广播信息(信息 1.出牌2.出牌失败3.游戏结束4.过)(玩家 1.玩家2.电脑)(牌 id)
-	if(w==1)
+	if(w==0)
+	{
+		yrc.innerHTML="";
+		prc.innerHTML="";
+	}
+	else if(w==1)
 	{
 		if(p==1)
 		{
@@ -382,13 +387,19 @@ function round2() {
 	return 0;
 }
 
+function start()
+{
+
 	document.getElementById("cardlake").innerHTML="欢迎来到 https://FUTBW.com\n";
 	mp1 = 4, hp1 = 5, ap1 = 3, thp1 = 0, cardtop1 = 0;
 	mp2 = 6, hp2 = 10, ap2 = 3, thp2 = 0, cardtop2 = 0;
 	//
 	givecard(1, 4);
 	givecard(2, 6);
+	broadcast(0,0,0);
 	showhp();showcards();
+}
+start();
 function zok() {
 	if (hp1 > 0 && hp2 > 0) {
 		choose = 37;
