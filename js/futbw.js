@@ -304,9 +304,11 @@ function showhp()
 	document.getElementById("yourhp").innerHTML=hp1;
 	document.getElementById("yourmp").innerHTML=mp1;
 	document.getElementById("yourap").innerHTML=ap1;
+	document.getElementById("yourcards").innerHTML=cardtop1;
 	document.getElementById("pcshp").innerHTML=hp2;
 	document.getElementById("pcsmp").innerHTML=mp2;
 	document.getElementById("pcsap").innerHTML=ap2;
+	document.getElementById("pcscards").innerHTML=cardtop2;
 }
 function round1(chosen) {
 	
